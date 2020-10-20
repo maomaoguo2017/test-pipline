@@ -16,7 +16,7 @@ pipeline {
     environment {
         APP_NAME = "test_name"
     }
-    node {
+
         stage('确认发版信息') {
             input {
                 message '请确认「代码分支」'
@@ -67,5 +67,5 @@ pipeline {
             }
         }
         parallel stages
-    }
+    
 }
