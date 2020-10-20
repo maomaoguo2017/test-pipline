@@ -1,6 +1,6 @@
 properties([
     parameters([
-        string(name: 'countTotal', defaultValue: '4'),
+        string(name: 'countTotal', defaultValue: '1'),
         choice(name: 'servers', choices: ['10.10.10.10'], description: 'Run on specific platform'),
     ])
 ])
