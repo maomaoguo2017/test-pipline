@@ -67,4 +67,5 @@ pipeline {
             }
         }
         parallel stages
+    }
 }
