@@ -18,7 +18,7 @@ node{
         stages["server${vmNumber}"] = {
             stage("deploy ${vmNumber}") {
 
-                    sh "echo deploy; sleep 5"
+                    sh "echo deploy server${vmNumber}; sleep 5"
 
             }
             stage("test ${vmNumber}") {
