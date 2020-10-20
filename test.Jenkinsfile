@@ -5,7 +5,7 @@ def getServers(){
     return ['10.10.10.10']
 }
 node {
-    agent any
+
     options {
         timestamps()
         disableConcurrentBuilds()
