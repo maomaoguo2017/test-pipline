@@ -4,7 +4,7 @@ def getBranch(){
 def getServers(){
     return ['10.10.10.10']
 }
-pipeline {
+node {
     agent any
     options {
         timestamps()
