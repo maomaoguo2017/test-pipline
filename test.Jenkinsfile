@@ -1,5 +1,5 @@
 def getBranch(){
-    return "main"
+    return "master"
 }
 def getServers(){
     return ['10.10.10.10']
@@ -22,7 +22,7 @@ pipeline {
                 message '请确认「代码分支」'
                 ok '确认'
                 parameters {
-                    string defaultValue: 'main', description: '默认分支为「main」，可修改为 tag 名称：', name: 'BRANCH_NAME', trim: true
+                    string defaultValue: 'master', description: '默认分支为「master」，可修改为 tag 名称：', name: 'BRANCH_NAME', trim: true
                 }
             }
             steps {
